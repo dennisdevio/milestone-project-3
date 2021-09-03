@@ -28,6 +28,24 @@ def get_books():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        # check if user exists in database
+        user_exists = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+    
+        if user_exists:
+            flash('Username not available')
+            return redirect(url_for("register"))
+
+        register = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register)
+
+        # put new user into 'session' cookie
+        session["user"] = request.form.get("username").lower()
+        flash('Registration complete')
     return render_template("register.html")
 
 
