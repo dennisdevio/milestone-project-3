@@ -14,11 +14,11 @@ html {
 /* NAVBAR */
 
 .navbar {
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(23, 161, 80, 0.767);
 }
 
-.navbar a:hover {
+.navbar-collapse a:hover {
     border-bottom: 1px solid rgb(51, 50, 50);
 
 }
@@ -27,7 +27,7 @@ html {
 /* REGISTRATION AND LOGIN FORMS */
 
 h3 {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .card {
@@ -46,3 +46,6 @@ button {
     margin-top: 40px;
 }
 
+.form-bottom-links {
+    margin-top: 30px;
+}

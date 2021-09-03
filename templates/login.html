@@ -4,7 +4,7 @@
     <h3 class="text-center">Log in</h3>
 
     <div class="row">
-        <div class="card col-md-6 offset-md-3">
+        <div class="card col-md-6 col-lg-4 offset-md-3 offset-lg-4">
             <div class="card-body">
                 <form method="POST" action="{{ url_for('login') }}">
                     <!-- USERNAME INPUT FIELD -->
@@ -26,9 +26,9 @@
 
     <div class="row">
         <div class="col-12">
-            <p class="text-center">
+            <p class="text-center form-bottom-links">
                 Sign up here!
-                <a href="{{ url_for('register') }}">Create new account</a>
+                <a href="{{ url_for('signup') }}">Create new account</a>
             </p>
         </div>
     </div>
