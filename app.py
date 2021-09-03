@@ -18,11 +18,10 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-def index():
+def books():
     books = list(mongo.db.books.find())
     print(books)
-    return render_template("index.html", books=books)
-
+    return render_template("books.html", books=books)
 
 
 if __name__ == "__main__":
