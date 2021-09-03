@@ -1,3 +1,5 @@
+/* BODY */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,9 @@ html {
     scroll-behavior: smooth;
   }
 
+
+/* NAVBAR */
+
 .navbar {
     padding: 10px;
     background-color: rgba(23, 161, 80, 0.767);
@@ -17,3 +22,21 @@ html {
     border-bottom: 1px solid rgb(51, 50, 50);
 
 }
+
+
+/* Registration form */
+
+h3 {
+    margin-top: 70px;
+}
+
+.card {
+    margin-top: 40px;
+}
+
+
+/*
+button {
+    color: rgba(23, 161, 80, 0.767);
+}
+*/
