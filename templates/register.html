@@ -9,11 +9,11 @@
                 <form method="POST" action="{{ url_for('register') }}">
                     <div class="mb-3">
                         <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" name="username" id="username" minlength="5" maxlength="15" aria-describedby="emailHelp" pattern="^[a-zA-Z0-9]{5,15}$" required>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" name="password" id="password">
+                        <input type="password" class="form-control" name="password" id="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" required>
                     </div>
                     <button type="submit" class="btn btn-success">Sign up!</button>
                 </form>
