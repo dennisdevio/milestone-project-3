@@ -32,7 +32,7 @@ def signup():
         # check if user exists in database
         user_exists = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-    
+  
         if user_exists:
             flash('Username not available')
             return redirect(url_for("signup"))
@@ -66,11 +66,11 @@ def login():
                 # invalid password match
                 flash("Username and/or Password is incorrect")
                 return redirect(url_for("login"))
-    
         else:
             # username does not exist
             flash("Username and/or Password is incorrect")
             return redirect(url_for("login"))
+
     return render_template("login.html")
 
 
