@@ -32,7 +32,7 @@ def signup():
         # check if user exists in database
         user_exists = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-  
+
         if user_exists:
             flash('Username not available')
             return redirect(url_for("signup"))
@@ -72,6 +72,15 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("login.html")
+
+
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    # retreive the session user's username from the database
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    return render_template("profile.html", username=username)
+
 
 
 if __name__ == "__main__":
