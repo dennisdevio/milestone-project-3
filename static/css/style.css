@@ -24,7 +24,7 @@ html {
 }
 
 
-/* Registration form */
+/* REGISTRATION AND LOGIN FORMS */
 
 h3 {
     margin-top: 70px;
@@ -34,15 +34,15 @@ h3 {
     margin-top: 40px;
 }
 
-
 /*
 
 button {
     color: rgba(23, 161, 80, 0.767);
 }
 
-.flashes {
+*/
 
+.flashes {
+    margin-top: 40px;
 }
 
-*/
