@@ -12,3 +12,8 @@ html {
     padding: 10px;
     background-color: rgba(23, 161, 80, 0.767);
 }
+
+.navbar a:hover {
+    border-bottom: 1px solid rgb(51, 50, 50);
+
+}
