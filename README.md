@@ -23,4 +23,24 @@ My second goal was to create a website that is available wherever the user is an
 - As an account holder I want to be able to interact with the community.
 - As an account holder I want to know your website is reliable on all devices I might use.
 
+### Wireframes
+For this project I made wireframes for five webpages within the website, namely
 
+- The Home Page
+- A page to view a single book in a large mode.
+- A register page
+- A login page
+- And the profile  page
+
+Each of the pages has three wireframes
+
+- One for small screens
+- One for medium screens
+- One for large screens
+
+The home page lists all books on the website while the second page focuses on the synopsis of each book.
+The signup and login pages basically just contain simple forms for a clean design. Finally the profile page shows each account holders personal book list.
+
+The wireframes were created using - [InVision](https://www.invisionapp.com/). 
+
+You can view the wireframes [here](https://dennischmielewski323696.invisionapp.com/freehand/Classic-Novels-Review-EoIn0vC2r)
