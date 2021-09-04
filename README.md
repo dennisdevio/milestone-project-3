@@ -44,3 +44,9 @@ The signup and login pages basically just contain simple forms for a clean desig
 The wireframes were created using - [InVision](https://www.invisionapp.com/). 
 
 You can view the wireframes [here](https://dennischmielewski323696.invisionapp.com/freehand/Classic-Novels-Review-EoIn0vC2r)
+
+### Structure
+The structure of the website is laid out in such a way that the books have the main focus only a nav bar at the top for navigation though the website. 
+The home page displays all books and if you create an account you get your personal book list that you can edit. 
+The difference between viewing the website publically and being a member is that the member can create and edit their personal book list and also leave reviews. A non-member can only view the whole library of books without being able to edit it.
+
