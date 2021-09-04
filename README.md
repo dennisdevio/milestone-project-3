@@ -69,6 +69,36 @@ To make the website responsive I decided to go with Boostrap5 since it is an eas
 
 
 
+
+
+## Deployment
+The deployment of this project was accomplished using Gitpod and Git for version control. 
+I used Gitpod to write all code and push all changes made to my Github Repository using Git from the Gitpod terminal.
+
+### Repository
+If you want to view this website locally on your computer:
+- Click on your preferred clone method in the upper right-hand side corner of this repository.
+- Open your cloned repository in your IDE of choice.
+- Run the website on a local server from there.
+
+This project reposity is hosted on  
+- [GitHub](https://github.com/) - you can find it at [this link](https://github.com/tetrapak-dev/milestone-project-3)
+
+### Hosting Platform
+This website is hosted on [Heroku](https://www.heroku.com/home) and is deployed directly from the 'master' branch. The deployed website will update automatically when new changes are committed to the master branch. 
+
+To host this website:
+- I created a requirements.txt file using the terminal command 'pip freeze > requirements.txt'.
+- Then created a Procfile with the terminal command 'echo web: python app.py > Procfile'.
+- I added, committed, and pushed the files to the projects Github repository.
+- After that I created a new app on the Heroku website by clicking the "New" button in the dashboard.
+- From within the new app I clicked on settings --> deploy --> deployment method and then selected Github to connec the app to my Github repository.
+- Lastly I added the necessary config vars for 'IP', 'dabase name', 'database URI', 'port', 'secret_key' and 'key' in order to make the app able to run.
+
+The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
+
+## Credits
+
 ### Acknowledgements
 - My mentor [Akshat Garg](https://github.com/akshatnitd) for his very much appreciated and needed advice and support.
 - [Code Institute](https://codeinstitute.net/)'s Student Care and Slack community.
