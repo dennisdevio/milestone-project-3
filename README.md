@@ -3,5 +3,5 @@ This website called Classic Novels Review is a website for book enthusiasts that
 The purpose of this website is to provide a way for people to keep track of their favourite books, contribute to the wider community by leaving reviews and learn from other community members as well through their reviews.
 
 ## Showcase
-Click [here]() to view the website and see the weather forecast in real-time.
-![]()
+You can view the Classic Novels Review website [here](https://classic-novels-review.herokuapp.com/get_books).
+![showcase_MS#]()
