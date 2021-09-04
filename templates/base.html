@@ -26,18 +26,21 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="{{ url_for('get_books') }}">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('signup') }}">Sign up</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('login') }}">Log in</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">My book list</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Log out</a>
-                        </li>
+                        {% if session.user %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">My book list</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('logout') }}">Log out</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('signup') }}">Sign up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('login') }}">Log in</a>
+                            </li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>

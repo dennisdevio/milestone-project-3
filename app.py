@@ -98,7 +98,7 @@ def logout():
     # remove user's session cookies
     flash("You are now logged out")
     session.pop("user")
-    return. redirect(url_for("login"))
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":
