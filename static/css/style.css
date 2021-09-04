@@ -56,3 +56,7 @@ button {
 .user-heading {
     margin-bottom: 45px;
 }
+
+.accordion-button {
+    background-color: rgba(23, 161, 80, 0.767);
+}
