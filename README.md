@@ -50,3 +50,7 @@ The structure of the website is laid out in such a way that the books have the m
 The home page displays all books and if you create an account you get your personal book list that you can edit. 
 The difference between viewing the website publically and being a member is that the member can create and edit their personal book list and also leave reviews. A non-member can only view the whole library of books without being able to edit it.
 
+### Design
+To create an appealing feel to the website, I chose a mellow theme with green and white colors with not much extra going on around the books themselves to keep the main focus on the books, which I myself would want in such a website. 
+For this reason I chose to just have the name 'Classic Novels Review' as the logo.
+To make the website responsive I decided to go with Boostrap5 since it is an easy framework to work with that I have prior experience with. As a detail I added smooth scrolling behavior to the website to make the user experience more pleasant and seamless.
