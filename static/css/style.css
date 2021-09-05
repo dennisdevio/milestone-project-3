@@ -24,6 +24,12 @@ html {
 }
 
 
+/* MAIN CONTENT */
+
+main {
+    height: 100vmin;
+}
+
 /* FOOTER */
 
 ul {
@@ -32,6 +38,7 @@ ul {
 
 footer {
     height: 90px;
+    padding-top: 17px;
     background-color: rgba(23, 161, 80, 0.767);;
     text-align: center;
 }
