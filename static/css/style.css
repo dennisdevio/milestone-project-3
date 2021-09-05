@@ -144,3 +144,13 @@ button {
     margin-top: 100px;
     margin-bottom: 70px;
 }
+
+.book-review {
+    padding-top: 30px;
+}
+
+.card {
+    background-color: rgba(169, 170, 170, 0.356);
+    padding: 75px;
+    box-shadow: 1px 1px 5px 2px rgba(144, 146, 145, 0.356);
+}
