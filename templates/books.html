@@ -1,33 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <!-- 
-    <img src="../static/images/homepage_image_big.jpg" alt="image of library" class="homepage-image">
     <h1 class="text-center">Welcome to</h1>
     <h1 class="text-center"><b>Classic Novels Review</b></h1>
     <h4 class="text-center"><i>Sign up to keep track of your favorite books!</i></h4>
-    -->
+    <img src="../static/images/homepage_image_big.jpg" alt="image of library" class="homepage-image">
+    
 
-
-    {% for book in books %}
-        {{ book.title}}<br>
-        {{ book.author}}<br>
-        {{ book.description}}<br>
-    {% endfor %}
-
-    <div class="accordion" id="accordionExample">
+    <div class="accordion col-md-8 offset-md-2 top-accordion" id="accordionExample">
+        {% for book in books %}
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
+                    {{ book.title}}
                 </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+                    <strong>{{ book.author}}</strong>
+                    <br>
+                    <br>
+                    <p>{{ book.description}}</p>
             </div>
         </div>
+        {% endfor %}
     </div>
 
     <div class="row">
@@ -38,7 +34,5 @@
             </p>
         </div>
     </div>
-    
-    
         
 {% endblock %}
