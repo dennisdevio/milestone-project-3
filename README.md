@@ -97,7 +97,6 @@ To host this website:
 
 The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
 
-![showcase_classic_novels_review.png](https://github.com/tetrapak-dev/milestone-project-3/blob/master/static/images/showcase_classic_novels_review.png)
 
 ## Credits
 
