@@ -24,6 +24,34 @@ html {
 }
 
 
+/* FOOTER */
+
+ul {
+    list-style: none;
+}
+
+footer {
+    height: 90px;
+    background-color: rgba(23, 161, 80, 0.767);;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    padding: 15px;
+}
+
+footer i {
+    color: #070707;
+    font-size: 140%;
+    margin-top: 15px;
+}
+
+footer i:hover {
+    color: rgba(17, 17, 26, 0.5);
+}
+
+
 /* REGISTRATION AND LOGIN FORMS */
 
 h3 {
