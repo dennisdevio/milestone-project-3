@@ -4,8 +4,7 @@ The purpose of this website is to provide a way for people to keep track of thei
 
 ## Showcase
 You can view the Classic Novels Review website [here](https://classic-novels-review.herokuapp.com/get_books).
-
-![]()
+![showcase_classic_novels_review.png](https://github.com/tetrapak-dev/milestone-project-3/blob/master/static/images/showcase_classic_novels_review.png)
 
 ## UX
 
@@ -96,9 +95,6 @@ To host this website:
 - Lastly I added the necessary config vars for 'IP', 'dabase name', 'database URI', 'port', 'secret_key' and 'key' in order to make the app able to run.
 
 The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
-
-![showcase_classic_novels_review.png](https://github.com/tetrapak-dev/milestone-project-3/blob/master/static/images/showcase_classic_novels_review.png)
-
 
 ## Credits
 
