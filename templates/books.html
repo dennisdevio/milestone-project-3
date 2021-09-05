@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<h1 class="text-center">Welcome to Classic Novels Review</h1>
+
 <img src="../static/images/homepage_image_big.jpg" alt="image of library" class="homepage-image">
+
+<h2 class="text-center"><i>Sign up to keep track your favorite books!</i></h2>
 
     {% for book in books %}
         {{ book.title}}<br>
         {{ book.author}}<br>
         {{ book.description}}<br>
     {% endfor %}
+
+
 
 {% endblock %}
