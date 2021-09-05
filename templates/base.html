@@ -37,17 +37,20 @@
                         </li>
                         {% if session.user %}
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">My book list</a>
+                                <a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('add_review') }}">Add Review</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url_for('logout') }}">Log out</a>
                             </li>
                         {% else %}
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('signup') }}">Sign up</a>
+                                <a class="nav-link" href="{{ url_for('login') }}">Log in</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('login') }}">Log in</a>
+                                <a class="nav-link" href="{{ url_for('signup') }}">Sign up</a>
                             </li>
                         {% endif %}
                     </ul>

@@ -37,16 +37,19 @@ main {
 
 /* HOMEPAGE */
 
+
+
+/*
 .accordion-button {
     background-color: rgba(23, 161, 80, 0.767);
 }
+*/
+
+
 
 .top-accordion {
     margin-top: 70px;
 }
-
-
-
 
 h1 {
     margin-top: 70px;
@@ -65,7 +68,6 @@ h4 {
     height: 55vh;
     object-fit: cover;
 }
-
 
 
 
