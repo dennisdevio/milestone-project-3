@@ -14,8 +14,11 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
+main {
+    min-height: 100vh;
+}
 
 
 /* NAVBAR */
@@ -34,10 +37,13 @@ html {
 
 /* HOMEPAGE */
 
-main {
-    min-height: 100vh;
+.accordion-button {
+    background-color: rgba(23, 161, 80, 0.767);
 }
 
+
+
+/*
 h1 {
     margin-top: 70px;
 }
@@ -54,6 +60,7 @@ h4 {
     height: 60vh;
     object-fit: cover;
 }
+ */
 
 
 
@@ -121,6 +128,3 @@ button {
     margin-bottom: 45px;
 }
 
-.accordion-button {
-    background-color: rgba(23, 161, 80, 0.767);
-}
