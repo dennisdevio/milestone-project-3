@@ -27,7 +27,17 @@ html {
 /* MAIN CONTENT */
 
 main {
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.homepage-image {
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 60vh;
+    object-fit: cover;
 }
 
 /* FOOTER */
