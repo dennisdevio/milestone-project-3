@@ -164,6 +164,25 @@ To host this website:
 The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
 
 ## Credits
+- [The Grapes of Wrath](https://www.penguin.co.uk/books/26143/the-grapes-of-wrath/9780141185064.html)
+
+- [The Adventures of Huckleberry Finn](https://www.penguin.co.uk/books/276485/the-adventures-of-huckleberry-finn/9780143107323.html)
+
+- [1984](https://www.penguin.co.uk/books/1084996/nineteen-eighty-four/9781787302549.html)
+
+- [Frankenstein](https://www.penguin.co.uk/books/183673/frankenstein/9780141198965.html)
+
+- [Moby-Dick](https://www.penguin.co.uk/books/62240/moby-dick/9780142437247.html)
+
+- [The Call of the Wild](https://www.penguin.co.uk/books/59518/the-call-of-the-wild/9780141321059.html)
+
+- [Crime and Punishment](https://www.penguin.co.uk/books/35469/crime-and-punishment/9780140449136.html)
+
+- [Brave New World](https://www.penguin.co.uk/books/34231/jane-eyre/9780141040387.html)
+
+- [Pride and Prejudice](https://www.penguin.co.uk/books/1050871/pride-and-prejudice/9781857150018.html)
+
+
 
 ### Acknowledgements
 - My mentor [Akshat Garg](https://github.com/akshatnitd) for his very much appreciated and needed advice and support.
