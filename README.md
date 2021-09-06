@@ -162,7 +162,7 @@ To host this website:
 - Lastly I added the necessary config vars for 'IP', 'dabase name', 'database URI', 'port', 'secret_key' and 'key' in order to make the app able to run.
 
 The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
-
+s
 ## Credits
 - [The Grapes of Wrath](https://www.penguin.co.uk/books/26143/the-grapes-of-wrath/9780141185064.html)
 
@@ -181,8 +181,6 @@ The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
 - [Brave New World](https://www.penguin.co.uk/books/34231/jane-eyre/9780141040387.html)
 
 - [Pride and Prejudice](https://www.penguin.co.uk/books/1050871/pride-and-prejudice/9781857150018.html)
-
-
 
 ### Acknowledgements
 - My mentor [Akshat Garg](https://github.com/akshatnitd) for his very much appreciated and needed advice and support.
