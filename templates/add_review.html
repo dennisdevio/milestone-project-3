@@ -10,7 +10,8 @@
                 <div class="row">
                     <div class="form-floating">
                         <label for="title"></label>
-                        <select class="form-select" id="title" name="title" aria-label="Floating label select example" required>
+                        <select class="form-select" id="title" name="title" 
+                            aria-label="Floating label select example" required>
                             <option selected>Choose your book</option>
                             {% for book in books %}
                                 <option value="{{ book.title }}">{{ book.title }}</option>
@@ -20,9 +21,16 @@
                 </div>
                 <div class="row">
                     <div class="mb-3 book-review">
-                        <label for="review_description" class="form-label">Book Review</label>
-                        <textarea class="form-control" id="review_description" name="review_description" rows="10" 
-                            minlength="5" maxlength="200" required></textarea>
+                        <label for="review_name" class="form-label">Review Title</label>
+                        <textarea class="form-control" id="review_name" name="review_name" 
+                            rows="1" minlength="5" maxlength="50" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 book-review">
+                        <label for="review_description" class="form-label">Review Text</label>
+                        <textarea class="form-control" id="review_description" name="review_description" 
+                            rows="10" minlength="5" maxlength="200" required></textarea>
                     </div>
                 </div>
             </form>
