@@ -19,11 +19,11 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_books")
-def get_books():
-    books = list(mongo.db.books.find())
-    print(books)
-    return render_template("books.html", books=books)
+@app.route("/get_reviews")
+def get_reviews():
+    reviews = list(mongo.db.reviews.find())
+    print(reviews)
+    return render_template("reviews.html", reviews=reviews)
 
 
 @app.route("/signup", methods=["GET", "POST"])
