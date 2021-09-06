@@ -15,7 +15,11 @@
                             aria-label="Floating label select example" required>
                             <option selected>Choose your book</option>
                             {% for book in books %}
-                                <option value="{{ book.title }}">{{ book.title }}</option>
+                                {% if book.title == review.book_name %}
+                                    <option value="{{ book.title }}" selected>{{ book.title }}</option>
+                                {% else %}
+                                    <option value="{{ book.title }}">{{ book.title }}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                     </div>
@@ -25,7 +29,7 @@
                          <!-- TITLE INPUT FIELD -->
                         <label for="review_name" class="form-label">Review Title</label>
                         <textarea class="form-control" id="review_name" name="review_name" 
-                            rows="1" minlength="5" maxlength="50" required></textarea>
+                            rows="1" minlength="5" maxlength="50" required>{{ review.review_name }}</textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -33,11 +37,14 @@
                         <!-- TEXT INPUT FIELD -->
                         <label for="review_description" class="form-label">Review Text</label>
                         <textarea class="form-control" id="review_description" name="review_description" 
-                            rows="10" minlength="5" maxlength="200" required></textarea>
+                            rows="10" minlength="5" maxlength="200" required>{{ review.review_description }}</textarea>
                     </div>
                 </div>
-                <!-- BUTTON -->
+                <!-- BUTTONS -->
                 <button type="submit" class="btn btn-success">Edit review!</button>
+                <button type="submit" class="btn btn-danger review-button">
+                    <a href="{{ url_for('get_reviews') }}">Cancel</a> 
+                </button>
             </form>
         </div>
     </div>
