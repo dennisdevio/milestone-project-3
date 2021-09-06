@@ -59,7 +59,13 @@ To make the website responsive I decided to go with Boostrap5 since it is an eas
 - Fnctionality for users to create an account.
 - Functionality to add, edit and delete book reviews.
 
+#### Features Left to Implement
+The following is a full list of features that will be implemented on a future release:
 
+- Functionality for users to create their on book lists.
+- A searchbox where the user can search for books.
+- Emails sent to user fors for resetting passwords.
+- Function to delete account
 
 
 
