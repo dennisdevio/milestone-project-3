@@ -82,7 +82,8 @@ The technologies used to build this website are the following
 - [The W3C CSS Validator](https://jigsaw.w3.org/css-validator/) for testing of all CSS code.
 
 #### Images
-- [Unsplash](https://unsplash.com/) for the image used on the website. 
+- [Unsplash](https://unsplash.com/) for the image used on the website.
+- [TinyPNG](https://tinypng.com/) for compressing project images.
 
 #### Fonts & Icons
 - [Google Fonts](https://fonts.google.com/share?selection.family=Noto%20Sans%20KR%7COpen%20Sans) for the fonstyles 'Noto Sans KR' and 'Open Sans' used on the website. 
