@@ -54,12 +54,10 @@ To create an appealing feel to the website, I chose a mellow theme with green an
 For this reason I chose to just have the name 'Classic Novels Review' as the logo.
 To make the website responsive I decided to go with Boostrap5 since it is an easy framework to work with that I have prior experience with. As a detail I added smooth scrolling behavior to the website to make the user experience more pleasant and seamless.
 
-
-
-
-
-
-
+## Features
+- Responsive Design across all device sizes, including a hamburger menu button on smaller screens.
+- Fnctionality for users to create an account.
+- Functionality to add, edit and delete book reviews.
 
 
 
