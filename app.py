@@ -118,6 +118,12 @@ def add_review():
     return render_template("add_review.html", books=books)
 
 
+@app.route("/edit_review/<review_id>", methods=["GET", "POST"])
+def edit_review(review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId()})
+    books = mongo.db.books.find().sort("title", 1)
+    return render_template("edit_review.html", review=review, books=books)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

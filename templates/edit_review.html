@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <h2 class="text-center review-heading">Leave a Review</h2>
+    <h2 class="text-center review-heading">Edit Review</h2>
 
 
     <div class="row card col-md-6 offset-md-3">
         <div class="card-body">
-            <form action="{{url_for('add_review') }}" method="POST">
+            <form action="{{url_for('edit_review', review_id=review._id) }}" method="POST">
                 <div class="row">
                     <div class="form-floating">
                          <!-- DROPDOWN SELECTOR -->
@@ -36,8 +36,8 @@
                             rows="10" minlength="5" maxlength="200" required></textarea>
                     </div>
                 </div>
-                <!-- LOGIN BUTTON -->
-                <button type="submit" class="btn btn-success">Leave review!</button>
+                <!-- BUTTON -->
+                <button type="submit" class="btn btn-success">Edit review!</button>
             </form>
         </div>
     </div>
