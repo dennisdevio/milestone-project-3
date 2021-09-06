@@ -37,15 +37,10 @@ main {
 
 /* HOMEPAGE */
 
-
-
-/*
-.accordion-button {
-    background-color: rgba(23, 161, 80, 0.767);
+.review-button a {
+    text-decoration: none;
+    color: linen;
 }
-*/
-
-
 
 .top-accordion {
     margin-top: 70px;
