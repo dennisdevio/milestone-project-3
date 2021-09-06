@@ -119,12 +119,19 @@ Testing was done for all user stories on the following devices and operating sys
 
 
 Results from Lighthouse performance test
+![screenshot_lighthouse_report_viewer](static/images/screenshot_lighthouse_report_viewer.png)
 
+The Lighthouse report came back around 75-85% on performance and accessibility. I them compressed the images but it only made a slight difference.
 
 Results from W3C Markup Validator test
+![w3c_html_validator_results](static/images/w3c_html_validator_results.png)
 
+The Markup Validator came back with a few errors regarding the buttons. I tried to improve it but dit not manage to do it fully.
 
 Results from W3C CSS Validator test
+![w3c_css_validator_results](static/images/w3c_css_validator_results.png)
+
+The CSS Validator came back with no issues at all.
 
 
 #### Bugs Fixed
