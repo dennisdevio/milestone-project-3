@@ -13,27 +13,32 @@
         {% for review in reviews %}
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
+                {% if session.user|lower == reviews.added_by|lower %}
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     {{ review.review_name }}
                 </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>{{ review.book_name }}</strong>
-                    <br>
-                    <br>
-                    <p>{{ review.review_description }}</p>
-                    <br>
-                    <p><em>Posted by: {{review.added_by }}</em></p>
+                <button type="submit" class="btn btn-success review-button">
+                    <a href="">Done</a> 
+                </button>
+                <button type="submit" class="btn btn-primary review-button">
+                    <a href="{{ url_for('delete_review', review_id=review._id) }}">Edit</a> 
+                </button>
+                <button type="submit" class="btn btn-primary review-button">
+                    <a href="{{ url_for('edit_review', review_id=review._id) }}">Edit</a> 
+                </button>
+                {% endif %}
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>{{ review.book_name }}</strong>
+                        <br>
+                        <br>
+                        <p>{{ review.review_description }}</p>
+                        <br>
+                        <p><em>Posted by: {{review.added_by }}</em></p>
+                    </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-success review-button">
-                <a href="">Done</a> 
-            </button>
-            <button type="submit" class="btn btn-primary review-button">
-                <a href="{{ url_for('edit_review', review_id=review._id) }}">Edit</a> 
-            </button>
-        </div>
         {% endfor %}
     </div>
 

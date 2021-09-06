@@ -101,7 +101,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_review", methods=["GET","POST"])
+@app.route("/add_review", methods=["GET", "POST"])
 def add_review():
     if request.method == "POST":
         review = {
@@ -120,10 +120,27 @@ def add_review():
 
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
+    if request.method == "POST":
+        submit = {
+            "book_name": request.form.get("book_name"),
+            "review_name": request.form.get("review_name"),
+            "review_description": request.form.get("review_description"),
+            "added_by": session["user"]
+        }
+        mongo.db.reviews.update({"_id": ObjectId(review_id)}, submit)
+        flash("Review Successfully Updated")
+
     review = mongo.db.reviews.find_one({"_id": ObjectId()})
     books = mongo.db.books.find().sort("title", 1)
     return render_template("edit_review.html", review=review, books=books)
 
+
+@app.route("/delete_review/<review_id>")
+def delete_review(review_id):
+    mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+    flash("Task deleted")
+    return redirect(url_for("get_reviews"))
+    
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
