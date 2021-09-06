@@ -67,8 +67,37 @@ The following is a full list of features that will be implemented on a future re
 - Emails sent to user fors for resetting passwords.
 - Function to delete account
 
+## Technologies
+The technologies used to build this website are the following
 
+#### Development
+- [Gitpod Online IDE](https://www.gitpod.io/) for all code editing.
+- [Firefox Devtools](https://developer.mozilla.org/en-US/docs/Tools) for all functional testing throughout the development process.
 
+#### Testing
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse/) for performance testing of the website.
+- [The W3C Markup Validator](https://validator.w3.org/) for testing of all HTML code.
+- [The W3C CSS Validator](https://jigsaw.w3.org/css-validator/) for testing of all CSS code.
+
+#### Images
+- [Unsplash](https://unsplash.com/) for the image used on the website. 
+
+#### Fonts & Icons
+- [Google Fonts](https://fonts.google.com/share?selection.family=Noto%20Sans%20KR%7COpen%20Sans) for the fonstyles 'Noto Sans KR' and 'Open Sans' used on the website. 
+- [Font Awesome](https://fontawesome.com/start) for all website icons.
+
+### Languages 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) was utilized for laying the foundation and structuring the basis of the website content. 
+- [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was utilized for the placement and styling of all HTML5 content on the website. 
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was utilized for creating animations on the website as well as creating interactivity with, and generating real-time information for the user.
+- [Python3](https://www.python.org/downloads/) for handling user accounts and data with databases.
+
+### Frameworks
+- [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/) Bootstrap 5 was used to implement a responsive mobile-first design on the website.
+- [Flask](https://palletsprojects.com/p/flask/) to create templates used for the website.
+
+### Databases
+- [MongoDB](https://www.mongodb.com/) for handling and storing user data when interacting with their account.
 
 
 
