@@ -100,11 +100,12 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-
+"""
 @app.route("/add_review")
 def add_review():
-    return render_template("add_review.html")
-
+    review = mongo.db.books.find()
+    return render_template("add_review.html", books=reviews)
+"""
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
