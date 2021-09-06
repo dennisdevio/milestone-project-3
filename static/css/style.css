@@ -21,6 +21,7 @@ main {
 }
 
 
+
 /* NAVBAR */
 
 .navbar {
@@ -106,14 +107,6 @@ h3 {
 .card {
     margin-top: 40px;
 }
-
-/*
-
-button {
-    color: rgba(23, 161, 80, 0.767);
-}
-
-*/
 
 .flashes {
     margin-top: 40px;

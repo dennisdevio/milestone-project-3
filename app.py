@@ -17,7 +17,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+# GET REVIEWS FROM DATABASE
 @app.route("/")
 @app.route("/get_reviews")
 def get_reviews():
@@ -25,7 +25,7 @@ def get_reviews():
     print(reviews)
     return render_template("reviews.html", reviews=reviews)
 
-
+# SIGNUP FUNCTION
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     if request.method == "POST":
@@ -50,7 +50,7 @@ def signup():
 
     return render_template("signup.html")
 
-
+# LOGIN FUNCTION
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -79,7 +79,7 @@ def login():
 
     return render_template("login.html")
 
-
+# SESSION FUNCTION FOR USER ACCOUNTS
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # retreive the session user's username from the database
@@ -92,7 +92,7 @@ def profile(username):
 
     return redirect(url_for("login"))
 
-
+# LOGOUT FUNCTION
 @app.route("/logout")
 def logout():
     # remove user's session cookies
@@ -100,7 +100,7 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-
+# ADD REVIEW FUNCTION
 @app.route("/add_review", methods=["GET", "POST"])
 def add_review():
     if request.method == "POST":
@@ -117,7 +117,7 @@ def add_review():
     books = mongo.db.books.find().sort("title", 1)
     return render_template("add_review.html", books=books)
 
-
+# EDIT REVIEW FUNCTION
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
     if request.method == "POST":
@@ -134,15 +134,15 @@ def edit_review(review_id):
     books = mongo.db.books.find().sort("title", 1)
     return render_template("edit_review.html", review=review, books=books)
 
-
+# DELETE REVIEW FUNCTION
 @app.route("/delete_review/<review_id>")
 def delete_review(review_id):
     mongo.db.reviews.remove({"_id": ObjectId(review_id)})
     flash("Task deleted")
     return redirect(url_for("get_reviews"))
-    
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)

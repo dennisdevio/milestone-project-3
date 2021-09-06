@@ -1,5 +1,5 @@
 # Classic Novels Review
-This website called Classic Novels Review is a website for book enthusiasts that provides a way for them to keep track of their favourite books through a personal account, leave reviews for others on book they have read and read reviews others have written. The name Classic Novels Review clearly states what the site is about. It is specifically geared towards classic novels that are know to many.
+This website called Classic Novels Review is a website for book enthusiasts that provides a way for them to leave reviews for others on book they have read and read reviews others have written. The name Classic Novels Review clearly states what the site is about. It is specifically geared towards classic novels that are know to many.
 The purpose of this website is to provide a way for people to keep track of their favourite books, contribute to the wider community by leaving reviews and learn from other community members as well through their reviews.
 
 ## Showcase
@@ -37,7 +37,7 @@ Each of the pages has three wireframes
 - One for medium screens
 - One for large screens
 
-The home page lists all books on the website while the second page focuses on the synopsis of each book.
+The home page lists all reviews the website while the account focuses on leaving reviews on each book.
 The signup and login pages basically just contain simple forms for a clean design. Finally the profile page shows each account holders personal book list.
 
 The wireframes were created using - [InVision](https://www.invisionapp.com/). 
@@ -47,7 +47,7 @@ You can view the wireframes [here](https://dennischmielewski323696.invisionapp.c
 ### Structure
 The structure of the website is laid out in such a way that the books have the main focus only a nav bar at the top for navigation though the website. 
 The home page displays all books and if you create an account you get your personal book list that you can edit. 
-The difference between viewing the website publically and being a member is that the member can create and edit their personal book list and also leave reviews. A non-member can only view the whole library of books without being able to edit it.
+The difference between viewing the website publically and being a member is that the member can create and edit their reviews. A non-member can only view the whole library of books without being able to edit it.
 
 ### Design
 To create an appealing feel to the website, I chose a mellow theme with green and white colors with not much extra going on around the books themselves to keep the main focus on the books, which I myself would want in such a website. 
@@ -66,6 +66,8 @@ The following is a full list of features that will be implemented on a future re
 - A searchbox where the user can search for books.
 - Emails sent to user fors for resetting passwords.
 - Function to delete account
+- Showing one book in detail.
+- Adding images to all books.
 
 ## Technologies
 The technologies used to build this website are the following
@@ -99,9 +101,41 @@ The technologies used to build this website are the following
 ### Databases
 - [MongoDB](https://www.mongodb.com/) for handling and storing user data when interacting with their account.
 
+## Testing
+Due to many difficulties along the way the site is not working properly as a whole.
+The connection with the database works fine with both adding and deleting tasks.
+The frontend is not working well at the moment. There is a problem with registration and the functionality that is supposed to be available only for registered users is available to non-registered users.
+
+Testing was done for all user stories on the following devices and operating systems:
+
+- Manually tested on Android on a Fairphone 3,  
+- Manually tested on Linux Mint on an Dell XPS 15 Laptop.
+- Manually tested on Windows 10 on an Dell XPS 15 Laptop.
+
+- Tested on Iphone and several Android devices using Firefox Devtools.
+
+- Test on an Ipad and Nexus Tablet using Firefox Devtools.
 
 
+Results from Lighthouse performance test
 
+
+Results from W3C Markup Validator test
+
+
+Results from W3C CSS Validator test
+
+
+#### Bugs Fixed
+- Reversed the structure to make the reviews the main function, rather than the books which I had done from the beginning.
+
+#### Bugs Left
+- Buttons not showing when logged in.
+- Book title and review title not showing in reviews.
+- Bootstrap5 accordion not showing properly when logged in.
+- Review info not loading into form when editing a review.
+- Delete functionality available when logged out.
+- Registration functionality does not work.
 
 ## Deployment
 The deployment of this project was accomplished using Gitpod and Git for version control. 
@@ -133,6 +167,7 @@ The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
 
 ### Acknowledgements
 - My mentor [Akshat Garg](https://github.com/akshatnitd) for his very much appreciated and needed advice and support.
+- Code Institute's tutor Tim Nelson's video lessons on creating a backend project.
 - [Code Institute](https://codeinstitute.net/)'s Student Care and Slack community.
 
 #### This project was made as part of Code Institute's Full Stack Software Development Programme. 
