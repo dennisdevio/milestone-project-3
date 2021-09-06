@@ -9,13 +9,12 @@
             <form action="" method="POST">
                 <div class="row">
                     <div class="form-floating">
-                        <label for="book_name"></label>
-                        <select class="form-select" id="book_name" name="book_name" aria-label="Floating label select example" required>
+                        <label for="title"></label>
+                        <select class="form-select" id="title" name="title" aria-label="Floating label select example" required>
                             <option selected>Choose your book</option>
-                            
-                                <option value=""></option>
-                            
-
+                            {% for book in books %}
+                                <option value="{{ book.title }}">{{ book.title }}</option>
+                            {% endfor %}
                         </select>
                     </div>
                 </div>
