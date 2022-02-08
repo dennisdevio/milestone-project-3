@@ -14,7 +14,7 @@
         {% for review in reviews %}
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne"></h2>
-            {% if session.user|lower == reviews.added_by|lower %}
+            {% if session.user|lower == review.added_by|lower %}
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     {{ review.review_name }}
                 </button>

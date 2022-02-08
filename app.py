@@ -22,7 +22,6 @@ mongo = PyMongo(app)
 @app.route("/get_reviews")
 def get_reviews():
     reviews = list(mongo.db.reviews.find())
-    print(reviews)
     return render_template("reviews.html", reviews=reviews)
 
 # SIGNUP FUNCTION
@@ -46,7 +45,7 @@ def signup():
         # put new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash('Sign up complete!')
-        return redirect(url_for("profile.html", username=["user"]))
+        return redirect(url_for("profile"))
 
     return render_template("signup.html")
 
@@ -80,8 +79,8 @@ def login():
     return render_template("login.html")
 
 # SESSION FUNCTION FOR USER ACCOUNTS
-@app.route("/profile/<username>", methods=["GET", "POST"])
-def profile(username):
+@app.route("/profile", methods=["GET", "POST"])
+def profile():
     # retreive the session user's username from the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -130,7 +129,7 @@ def edit_review(review_id):
         mongo.db.reviews.update({"_id": ObjectId(review_id)}, submit)
         flash("Review Successfully Updated")
 
-    review = mongo.db.reviews.find_one({"_id": ObjectId()})
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     books = mongo.db.books.find().sort("title", 1)
     return render_template("edit_review.html", review=review, books=books)
 
