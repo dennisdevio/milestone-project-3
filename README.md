@@ -3,7 +3,7 @@ This website called Classic Novels Review is a website for book enthusiasts that
 The purpose of this website is to provide a way for people to keep track of their favourite books, contribute to the wider community by leaving reviews and learn from other community members as well through their reviews.
 
 ## Showcase
-You can view the Classic Novels Review website [here](https://classic-novels-review.herokuapp.com/get_books).
+You can view the Classic Novels Review website [here](https://classic-novels-review.herokuapp.com/).
 ![showcase_classic_novels_review.png](https://github.com/tetrapak-dev/milestone-project-3/blob/master/static/images/showcase_classic_novels_review.png)
 
 ## UX
