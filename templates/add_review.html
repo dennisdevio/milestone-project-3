@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <h2 class="text-center review-heading">Leave a Review</h2>
+    <h2 class="text-center review-heading">Add a Review</h2>
 
 
     <div class="row card col-md-6 offset-md-3">
         <div class="card-body">
-            <form action="{{url_for('add_review') }}" method="POST">
+            <form action="{{ url_for('add_review') }}" method="POST">
                 <div class="row">
                     <div class="form-floating">
                          <!-- DROPDOWN SELECTOR -->
-                        <label for="book_name"></label>
-                        <select class="form-select" id="book_name" name="book_name" 
+                        <label for="book_title"></label>
+                        <select class="form-select" id="book_title" name="book_title" 
                             aria-label="Floating label select example" required>
                             <option selected>Choose your book</option>
                             {% for book in books %}
-                                <option value="{{ book.title }}">{{ book.title }}</option>
+                                <option value="{{ book.book_title }}">{{ book.book_title }}</option>
                             {% endfor %}
                         </select>
                     </div>
@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="mb-3 book-review">
                         <!-- TEXT INPUT FIELD -->
-                        <label for="review_description" class="form-label">Review Text</label>
+                        <label for="review_description" class="form-label">Add a Description</label>
                         <textarea class="form-control" id="review_description" name="review_description" 
                             rows="10" minlength="5" maxlength="200" required></textarea>
                     </div>

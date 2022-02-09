@@ -18,7 +18,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# RETU RN TO HOMEPAGE
+# RETURN TO HOMEPAGE
 @app.route("/")
 @app.route("/reviews")
 def reviews():
