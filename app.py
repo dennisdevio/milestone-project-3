@@ -17,8 +17,14 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-# GET REVIEWS FROM DATABASE
+
+# RETU RN TO HOMEPAGE
 @app.route("/")
+@app.route("/reviews")
+def reviews():
+    return render_template("reviews.html")
+
+# GET REVIEWS FROM DATABASE
 @app.route("/get_reviews")
 def get_reviews():
     reviews = list(mongo.db.reviews.find())
