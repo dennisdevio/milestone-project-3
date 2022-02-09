@@ -110,7 +110,7 @@ def logout():
 def add_review():
     if request.method == "POST":
         review = {
-            "book_name": request.form.get("book_name"),
+            "book_title": request.form.get("book_title"),
             "review_name": request.form.get("review_name"),
             "review_description": request.form.get("review_description"),
             "added_by": session["user"]
