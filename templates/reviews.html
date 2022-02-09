@@ -18,8 +18,8 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     {{ review.review_name }}
                 </button>
-                <a href="{{ url_for('delete_review', review_id=review._id) }}"><button type="submit" class="btn btn-primary review-button">Delete</button></a> 
-                <a href="{{ url_for('edit_review', review_id=review._id) }}"><button type="submit" class="btn btn-primary review-button">Edit</button></a> 
+                <a href="{{ url_for('edit_review', review_id=review._id) }}"><button type="submit" class="btn btn-primary review-button">Edit</button></a>
+                <a href="{{ url_for('delete_review', review_id=review._id) }}"><button type="submit" class="btn btn-danger review-button">Delete</button></a> 
                     {% endif %}
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
