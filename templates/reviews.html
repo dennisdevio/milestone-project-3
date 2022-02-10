@@ -23,6 +23,9 @@
             {% endif %}
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        {{ review.review_name }}
+                    </button>
                     <strong>{{ review.book_name }}</strong>
                     <br>
                     <br>
