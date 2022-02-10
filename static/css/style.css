@@ -27,7 +27,7 @@ main {
 .navbar {
     padding: 20px;
     background-color: rgba(23, 161, 80, 0.767);
-    color: #070707;
+    color: #070707; !important
 }
 
 .navbar-collapse a:hover {
