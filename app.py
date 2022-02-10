@@ -17,14 +17,8 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
-# RETURN TO HOMEPAGE
-@app.route("/")
-@app.route("/reviews")
-def reviews():
-    return render_template("reviews.html")
-
 # GET REVIEWS FROM DATABASE
+@app.route("/")
 @app.route("/get_reviews")
 def get_reviews():
     reviews = list(mongo.db.reviews.find())
@@ -110,7 +104,7 @@ def logout():
 def add_review():
     if request.method == "POST":
         review = {
-            "book_title": request.form.get("book_title"),
+            "book_name": request.form.get("book_name"),
             "review_name": request.form.get("review_name"),
             "review_description": request.form.get("review_description"),
             "added_by": session["user"]
