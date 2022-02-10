@@ -22,7 +22,12 @@
                 <div class="accordion-body">
                     <strong>{{ review.review_name }}</strong>
                     <br>
-                    <strong>{{ review.book_name }}</strong>
+                    <p>{{ review.book_name }} by
+                        {% for book in books %}
+                            {% if book.title == review.book_name %}
+                                {{ book.author }}
+                            {% endif %}
+                        {% endfor %}</p>
                     <br>
                     <br>
                     <p>{{ review.review_description }}</p>
