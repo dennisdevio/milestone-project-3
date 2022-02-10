@@ -20,7 +20,7 @@
                 </button>
                 <a href="{{ url_for('edit_review', review_id=review._id) }}"><button type="submit" class="btn btn-primary review-button">Edit</button></a>
                 <a href="{{ url_for('delete_review', review_id=review._id) }}"><button type="submit" class="btn btn-danger review-button">Delete</button></a> 
-                    {% endif %}
+            {% endif %}
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <strong>{{ review.book_name }}</strong>
@@ -28,7 +28,7 @@
                     <br>
                     <p>{{ review.review_description }}</p>
                     <br>
-                    <p><em>Posted by: {{review.added_by }}</em></p>
+                    <p><em>Posted by: {{ review.added_by }}</em></p>
                 </div>
             </div>
         </div>
