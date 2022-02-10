@@ -88,7 +88,7 @@ def profile():
 
     if session["user"]:
         return render_template("profile.html", username=username)
-
+        
     return redirect(url_for("login"))
 
 # LOGOUT FUNCTION
@@ -140,8 +140,15 @@ def delete_review(review_id):
     flash("Task deleted")
     return redirect(url_for("get_reviews"))
 
+# GET USER REVIEWS 
+@app.route("/get__user_reviews")
+def get_user_reviews():
+    reviews = list(mongo.db.reviews.find(user))
+    if session["user"]:
+        return render_template("reviews.html", reviews=username)
+        
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=False)
+            debug=True)
