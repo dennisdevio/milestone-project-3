@@ -30,18 +30,12 @@ main {
 }
 
 .navbar-collapse a:hover {
-    border-bottom: 1px solid rgb(51, 50, 50);
-
+    color: rgba(17, 17, 26, 0.5);
 }
 
 
 
 /* HOMEPAGE */
-
-.review-button a {
-    text-decoration: none;
-    color: linen;
-}
 
 .top-accordion {
     margin-top: 70px;
