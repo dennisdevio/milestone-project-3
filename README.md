@@ -66,19 +66,19 @@ To make the website responsive I decided to go with Boostrap5 since it is an eas
 #### Features Left to Implement
 The following is a full list of features that will be implemented on a future release:
 
-- Functionality for users to create their own book lists.
-- A searchbox where the user can search for books.
 - Emails sent to user for for resetting passwords.
-- Function to delete account
-- Showing one book in detail.
-- Adding images to all books.
+- Function to delete an account.
+- Adding images to all book that are available for.
+- Showing one book and it's reviews detail.
+- Ability to add additional books for reviewing.
+
 
 ## Technologies
 The technologies used to build this website are the following
 
 #### Development
 - [Gitpod Online IDE](https://www.gitpod.io/) for all code editing.
-- [Firefox Devtools](https://developer.mozilla.org/en-US/docs/Tools) for all functional testing throughout the development process.
+- [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) for all functional testing throughout the development process.
 
 #### Testing
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse/) for performance testing of the website.
@@ -97,40 +97,41 @@ The technologies used to build this website are the following
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) was utilized for laying the foundation and structuring the basis of the website content. 
 - [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was utilized for the placement and styling of all HTML5 content on the website. 
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was utilized for creating animations on the website as well as creating interactivity with, and generating real-time information for the user.
-- [Python3](https://www.python.org/downloads/) for handling user accounts and data with databases.
+- [Python3](https://www.python.org/downloads/) for handling user accounts and passing data to and from the database.
 
 ### Frameworks
 - [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/) Bootstrap 5 was used to implement a responsive mobile-first design on the website.
-- [Flask](https://palletsprojects.com/p/flask/) to create templates used for the website.
+- [Flask](https://palletsprojects.com/p/flask/) to create templates used throughout the website.
 
 ### Databases
-- [MongoDB](https://www.mongodb.com/) for handling and storing user data when interacting with their account.
+- [MongoDB](https://www.mongodb.com/) for handling and storing user data when interacting with their account. Three data collections were created in total - one for books, one for reviews and one for users.
 
 ## Testing
 Due to many difficulties along the way the site is not working properly as a whole.
 The connection with the database works fine with both adding and deleting tasks.
 The frontend is not working well at the moment. There is a problem with registration and the functionality that is supposed to be available only for registered users is available to non-registered users.
 
-Testing was done for all user stories on the following devices and operating systems:
+The testing procedures where performed on the following devices and operating systems:
 
-- Manually tested on Android on a Fairphone 3,  
-- Manually tested on Linux Mint on an Dell XPS 15 Laptop.
-- Manually tested on Windows 10 on an Dell XPS 15 Laptop.
+- Manually tested for user stories on Android on a Motorola g20.  
+- Manually tested for user stories on Linux Mint on a Dell XPS 15 Laptop.
+- Manually tested for user stories on Windows 10 on a Dell XPS 15 Laptop.
 
-- Tested on Iphone and several Android devices using Firefox Devtools.
-
-- Test on an Ipad and Nexus Tablet using Firefox Devtools.
+- Tested on Samsung Galaxy Note 20, Samsung Galaxy S10 and Samsung Galaxy S20 using Firefox Developer Tools.
+- Tested on Iphone 11, 12 and 13 using Firefox Developer Tools.
+- Test on Ipad and Kindle Fire HDX Tablets using Firefox Developer Tools.
 
 
 Results from Lighthouse performance test
 ![screenshot_lighthouse_report_viewer](static/images/screenshot_lighthouse_report_viewer.png)
 
-The Lighthouse report first came back around 75-85% on performance and accessibility. I them compressed the images a few more times and resolved the html validator issues I had before. These two measures particularly improved the performance and accessibility of the site to higher level. The lower rating on the performance is due to a combination of Bootstrap, FontAwesome and the hero image. Bootstrap and Fontawesome are necessary for this project and the hero image I compressed until I could not compress it further so I left it as is with a relatively good performance result.
+The Lighthouse report first came back with 75-85% on performance and accessibility. I then compressed the images a few more times and resolved the html validator issues I had before. These two measures particularly improved the performance and accessibility of the site to yield a higher score. The relatively lower rating on the performance is due to a combination of Bootstrap, Fontawesome and the hero image. I compressed the hero image until I could not compress it any further, using Tiny PNG. After a certain point the image would not compress significantly more. Bootstrap and Fontawesome are necessary for this project so I left it as is. Given these things I feel it is an acceptable result with relatively high performance result.
 
 Results from W3C Markup Validator test
 ![w3c_html_validator_results](static/images/w3c_html_validator_results.png)
 
- My first validator report came back with some errors and warnings the first time. After resolving the structure of the 'add' and 'edit' review buttons, an issue with the semantic tags and and an issue with the boostrap accordion 'id' attribute The Markup Validator came back with no errors the second time around.
+ My first validator report came back with quite a few errors and warnings the first time. These erros pertained to the 'add' and 'edit' review buttons in the review forms, a couple of semantic tags that were out of place and the Bootstrap accordions which accidentally contained a couple of example 'id' attributes from the Official Docs. 
+ After fixig the structure of the 'add' and 'edit' review buttons, removing the missplaced semantic tags and  example 'id' attributes in the Bootstrap accordions The Markup Validator came back with no errors the second time around.
 
 Results from W3C CSS Validator test
 ![w3c_css_validator_results](static/images/w3c_css_validator_results.png)
@@ -175,8 +176,10 @@ To host this website:
 - Lastly I added the necessary config vars for 'IP', 'dabase name', 'database URI', 'port', 'secret_key' and 'key' in order to make the app able to run.
 
 The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
-s
+
 ## Credits
+The following book titles were used for this projects
+
 - [The Grapes of Wrath](https://www.penguin.co.uk/books/26143/the-grapes-of-wrath/9780141185064.html)
 
 - [The Adventures of Huckleberry Finn](https://www.penguin.co.uk/books/276485/the-adventures-of-huckleberry-finn/9780143107323.html)
