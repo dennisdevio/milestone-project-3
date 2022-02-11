@@ -10,14 +10,14 @@
                 <div class="row">
                     <div class="form-floating">
                         <!-- DROPDOWN SELECTOR -->
-                       <label for="book_name"></label>
-                       <select class="form-select" id="book_name" name="book_name" 
-                           aria-label="Floating label select example" required>
-                           <option selected>Choose your book</option>
-                           {% for book in books %}
-                               <option value="{{ book.title }}">{{ book.title }}</option>
-                           {% endfor %}
-                       </select>
+                        <label for="book_id"></label>
+                        <select class="form-select" id="book_id" name="book_id" 
+                            aria-label="Floating label select example" required>
+                            <option selected>Choose your book</option>
+                            {% for book in books %}
+                                <option value="{{ book._id }}">{{ book.title }}</option>
+                            {% endfor %}
+                         </select>
                    </div>
                 </div>
                 <div class="row">
