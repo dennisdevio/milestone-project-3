@@ -187,6 +187,8 @@ s
 
 - [Moby-Dick](https://www.penguin.co.uk/books/62240/moby-dick/9780142437247.html)
 
+- [Jane Eyre](https://www.penguin.co.uk/books/1060371/jane-eyre/9780241438695.html)
+
 - [The Call of the Wild](https://www.penguin.co.uk/books/59518/the-call-of-the-wild/9780141321059.html)
 
 - [Crime and Punishment](https://www.penguin.co.uk/books/35469/crime-and-punishment/9780140449136.html)
