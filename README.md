@@ -14,7 +14,7 @@ My second goal was to create a website that is available wherever the user is an
 
 #### First Time User Goals
 - As a first time user I want to be able to easily understand what services you provide.
-- As a first time user I want to be able to easily read reviews others have left.
+- As a first time user I want to be able to easily be able to read reviews others have left.
 - As a first time user I want to be able to easily understand what the membership is about.
 - As a first time user I want to know the site easily accessible on computer and mobile devices, especially if I'm going to sign up.
 
@@ -39,12 +39,15 @@ Each of the pages has three wireframes
 - One for medium screens
 - One for large screens
 
-The home page lists all reviews the website while the account focuses on leaving reviews on each book.
-The signup and login pages basically just contain simple forms for a clean design. Finally the profile page shows each account holders personal book list.
+During the development process the focus of the project shifted from the books themselves to focus more on the reviews. The main differences between the wireframes and the live site is that I left out the page to view a single book and that the site lists reviews rather than books. The main reason for this was that I had to lessen the scope of the project to meet the deadline.
+The home page lists all reviews on the website while the account focuses on leaving reviews on the desired book.
+The signup and login pages basically just contain simple forms for a clean design. 
+Finally the profile page shows the reviews the user has left.
 
 The wireframes were created using - [InVision](https://www.invisionapp.com/). 
 
-You can view the wireframes [here](https://dennischmielewski323696.invisionapp.com/freehand/Classic-Novels-Review-EoIn0vC2r)
+You can view the wireframes [here](https://dennischmielewski323696.invisionapp.com/freehand/Classic-Novels-Review-EoIn0vC2r).
+NOTE: The link to view the wireframes is not supported on the Firefox desktop browser but it works fine on mobile. It works fine on Chrome and Opera as well.
 
 ### Structure
 The structure of the website is laid out in such a way that the books have the main focus only a nav bar at the top for navigation though the website. 
