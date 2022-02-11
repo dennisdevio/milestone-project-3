@@ -22,6 +22,8 @@ mongo = PyMongo(app)
 @app.route("/get_reviews")
 def get_reviews():
     reviews = list(mongo.db.reviews.find())
+    for review in reviews:
+        review['book'] = mongo.db.books.find_one({"_id": ObjectId(review['book_id'])})
     return render_template("reviews.html", reviews=reviews)
 
 # SIGNUP FUNCTION
@@ -79,17 +81,16 @@ def login():
     return render_template("login.html")
 
 # SESSION FUNCTION FOR USER ACCOUNTS
-@app.route("/profile", methods=["GET", "POST"])
+@app.route("/profile")
 def profile():
     # retreive the session user's username from the database
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
-
     if session["user"]:
-        return render_template("profile.html", username=username)
-        
-    return redirect(url_for("login"))
+        username = mongo.db.users.find_one({"username": session["user"]})["username"]
+        reviews = list(mongo.db.reviews.find())
+        for review in reviews:
+            review['book'] = mongo.db.books.find_one({"_id": ObjectId(review['_id'])})
+        return render_template("profile.html", username=username, reviews=reviews)
+    return redirect(url_for("login"))    
 
 # LOGOUT FUNCTION
 @app.route("/logout")
@@ -104,7 +105,7 @@ def logout():
 def add_review():
     if request.method == "POST":
         review = {
-            "book_name": request.form.get("book_name"),
+            "book_id": ObjectId(request.form.get("book_id")),
             "review_name": request.form.get("review_name"),
             "review_description": request.form.get("review_description"),
             "added_by": session["user"]
@@ -113,7 +114,7 @@ def add_review():
         flash("Review Successfully Added")
         return redirect(url_for("get_reviews"))
 
-    books = mongo.db.books.find().sort("title", 1)
+    books = list(mongo.db.books.find())
     return render_template("add_review.html", books=books)
 
 # EDIT REVIEW FUNCTION
@@ -121,7 +122,7 @@ def add_review():
 def edit_review(review_id):
     if request.method == "POST":
         submit = {
-            "book_name": request.form.get("book_name"),
+            "book_id": ObjectId(request.form.get("book_id")),
             "review_name": request.form.get("review_name"),
             "review_description": request.form.get("review_description"),
             "added_by": session["user"]
@@ -130,7 +131,7 @@ def edit_review(review_id):
         flash("Review Successfully Updated")
 
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
-    books = mongo.db.books.find().sort("title", 1)
+    books = list(mongo.db.books.find())
     return render_template("edit_review.html", review=review, books=books)
 
 # DELETE REVIEW FUNCTION
