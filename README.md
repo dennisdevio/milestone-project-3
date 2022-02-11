@@ -125,12 +125,12 @@ Testing was done for all user stories on the following devices and operating sys
 Results from Lighthouse performance test
 ![screenshot_lighthouse_report_viewer](static/images/screenshot_lighthouse_report_viewer.png)
 
-The Lighthouse report came back around 75-85% on performance and accessibility. I them compressed the images but it only made a slight difference.
+The Lighthouse report first came back around 75-85% on performance and accessibility. I them compressed the images a few more times and resolved the html validator issues I had before. These two measures particularly improved the performance and accessibility of the site to higher level. The lower rating on the performance is due to a combination of Bootstrap, FontAwesome and the hero image. Bootstrap and Fontawesome are necessary for this project and the hero image I compressed until I could not compress it further so I left it as is with a relatively good performance result.
 
 Results from W3C Markup Validator test
 ![w3c_html_validator_results](static/images/w3c_html_validator_results.png)
 
-The Markup Validator came back with a few errors regarding the buttons. I tried to improve it but dit not manage to do it fully.
+ My first validator report came back with some errors and warnings the first time. After resolving the structure of the 'add' and 'edit' review buttons, an issue with the semantic tags and and an issue with the boostrap accordion 'id' attribute The Markup Validator came back with no errors the second time around.
 
 Results from W3C CSS Validator test
 ![w3c_css_validator_results](static/images/w3c_css_validator_results.png)
