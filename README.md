@@ -1,6 +1,6 @@
 # Classic Novels Review
-This website called Classic Novels Review is a website for book enthusiasts that provides a way for them to leave reviews for others on book they have read and read reviews others have written. The name Classic Novels Review clearly states what the site is about. It is specifically geared towards classic novels that are know to many.
-The purpose of this website is to provide a way for people to keep track of their favourite books, contribute to the wider community by leaving reviews and learn from other community members as well through their reviews.
+This website called Classic Novels Review is a website for book enthusiasts that provides a way for them to leave public reviews on book they have read and read reviews others have written. The name Classic Novels Review clearly states what the site is about. It is specifically geared towards classic novels that are know to many.
+The purpose of this website is to create a platform for book lovers where they can both contribute to the wider community by leaving reviews and learn about potential books to read by reading reviews others have left.
 
 ## Showcase
 You can view the Classic Novels Review website [here](https://classic-novels-review.herokuapp.com/).
@@ -9,17 +9,19 @@ You can view the Classic Novels Review website [here](https://classic-novels-rev
 ## UX
 
 ### User Stories
-My goal was to create a website with a vibe that is appealing to the reader and with an intuitive design that presents the books, the sign up and log in forms, and the profile functionality in a clear manner.
-My second goal was to create a website that is available wherever the user is and that works smoothly in all devices, so that they can have their personal book list available whenever they need it.
+My goal was to create a website with a vibe that is appealing to the reader and with an intuitive design that presents the book reviews, the sign up and log in forms, and the profile functionality in a clear manner.
+My second goal was to create a website that is available wherever the user is and that works smoothly in all devices, so that they can read the reviews they and others have left wherever they want.
 
 #### First Time User Goals
 - As a first time user I want to be able to easily understand what services you provide.
+- As a first time user I want to be able to easily read reviews others have left.
 - As a first time user I want to be able to easily understand what the membership is about.
-- As a first time user I want to know tha site easily accessible, especially if I'm going to sign up.
+- As a first time user I want to know the site easily accessible on computer and mobile devices, especially if I'm going to sign up.
 
 #### Returning User Goals
-- As an account holder I want to be able to update my profile when I need to.
-- As an account holder I want to be able to interact with the community.
+- As an account holder I want to be able to leave reviews.
+- As an account holder I want to be able to see the reviews I have left.
+- As an account holder I want to be able to edit and/or delete reviews I have left.
 - As an account holder I want to know your website is reliable on all devices I might use.
 
 ### Wireframes
@@ -136,6 +138,7 @@ The CSS Validator came back with no issues at all.
 
 #### Bugs Fixed
 - Reversed the structure to make the reviews the main function, rather than the books which I had done from the beginning.
+- Broken showcase link in README.md is now working properly. 
 
 #### Bugs Left
 - Buttons not showing when logged in.
