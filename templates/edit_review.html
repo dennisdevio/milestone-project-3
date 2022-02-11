@@ -10,15 +10,15 @@
                 <div class="row">
                     <div class="form-floating">
                         <!-- DROPDOWN SELECTOR -->
-                        <label for="book_name"></label>
-                        <select class="form-select" id="book_name" name="book_name" 
+                        <label for="book_id"></label>
+                        <select class="form-select" id="book_id" name="book_id" 
                             aria-label="Floating label select example" required>
-                            <option selected>Choose your book</option>
+                            <option>Choose your book</option>
                             {% for book in books %}
-                                {% if book.title == review.book_name %}
-                                    <option value="{{ book.title }}" selected>{{ book.title }}</option>
+                                {% if book._id == review.book_id %}
+                                    <option value="{{ book._id }}" selected>{{ book.title }}</option>
                                 {% else %}
-                                    <option value="{{ book.title }}">{{ book.title }}</option>
+                                    <option value="{{ book._id }}">{{ book.title }}</option>
                                 {% endif %}
                             {% endfor %}
                         </select>
