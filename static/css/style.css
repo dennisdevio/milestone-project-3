@@ -103,7 +103,11 @@ h3 {
 }
 
 .flashes {
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+.messages {
+    width: 100%;
 }
 
 .form-bottom-links {
@@ -135,4 +139,10 @@ h3 {
     background-color: rgba(169, 170, 170, 0.356);
     padding: 75px;
     box-shadow: 1px 1px 5px 2px rgba(144, 146, 145, 0.356);
+}
+
+
+.btn-reviews {
+    margin-top: 7px;
+    margin-left: 7px;
 }

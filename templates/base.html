@@ -64,9 +64,11 @@
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for message in messages %}
+            <div class="container-fluid">
                 <div class="row flashes">
-                    <h4 class="text-center">{{ message }}</h4>
+                    <h4 class="text-center messages">{{ message }}</h4>
                 </div>
+            </div>
             {% endfor %}
         {% endif %}
     {% endwith %}
