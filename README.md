@@ -50,26 +50,25 @@ You can view the wireframes [here](https://dennischmielewski323696.invisionapp.c
 NOTE: The link to view the wireframes is not supported on the Firefox desktop browser but it works fine on mobile. It works fine on Chrome and Opera as well.
 
 ### Structure
-The structure of the website is laid out in such a way that the books have the main focus only a nav bar at the top for navigation though the website. 
-The home page displays all books and if you create an account you get your personal book list that you can edit. 
-The difference between viewing the website publically and being a member is that the member can create and edit their reviews. A non-member can only view the whole library of books without being able to edit it.
+The structure of the website is laid out in such a way that the reviews have the main focus. Only a navbar at the top for navigation through the website, a hero image along with welcome text and a footer is present otherwise.
+The home page displays all reviews a stated above and if you create an account you get access to leaving reviews as well as editing and/or deleting reviews you have left. A non-member can only view the list of reviews without being able to interact with them. 
 
 ### Design
-To create an appealing feel to the website, I chose a mellow theme with green and white colors with not much extra going on around the books themselves to keep the main focus on the books, which I myself would want in such a website. 
-For this reason I chose to just have the name 'Classic Novels Review' as the logo.
+To create an appealing feel to the website, I chose a mellow theme with green and white colors with not much extra going on around the reviews themselves to keep the main focus on them rather anything else. The green theme with the brown in the hero image I think creates a cozy feeling which makes me want to read. This is what I myself would want in such a website. For this reason I also chose to just have the name 'Classic Novels Review' as the logo.
 To make the website responsive I decided to go with Boostrap5 since it is an easy framework to work with that I have prior experience with. As a detail I added smooth scrolling behavior to the website to make the user experience more pleasant and seamless.
 
 ## Features
 - Responsive Design across all device sizes, including a hamburger menu button on smaller screens.
-- Fnctionality for users to create an account.
-- Functionality to add, edit and delete book reviews.
+- Functionality to read the reviews others have left.
+- Functionality for users to create an account.
+- Functionality to add, edit and delete reviews within the account.
 
 #### Features Left to Implement
 The following is a full list of features that will be implemented on a future release:
 
-- Functionality for users to create their on book lists.
+- Functionality for users to create their own book lists.
 - A searchbox where the user can search for books.
-- Emails sent to user fors for resetting passwords.
+- Emails sent to user for for resetting passwords.
 - Function to delete account
 - Showing one book in detail.
 - Adding images to all books.
