@@ -128,7 +128,7 @@ At first the site did not work properly. The CRUD operations for faulty, the log
 Now the CRUD functionality is working as excpected. The login functionality is also working properly.
 The data model has been modified alongside updating the functions to create a congruent data model where both operations to get data from the database posting data to the database makes sense. All user inputs are posted to the database correctly and all book data is retrieved from the database correctly.
 
-### The following user stories were tested for as a first time user:
+#### The following user stories were tested for as a first time user:
 
  - As a first time user I want to be able to easily understand what services you provide.
  By visiting the homepage the welcome text, hero image and posted reviews make it clear what the service is about. The information is presented clearly on computers, tablets and mobile.
@@ -142,7 +142,7 @@ The data model has been modified alongside updating the functions to create a co
  - As a first time user I want to know the site easily accessible on computer and mobile devices, especially if I'm going to sign up.
  The website is displayed correctly on mobile, tablets and computer when tested for. There is some side-scrolling present which I notice more on mobile than larger devices. The site works properly but there is room for UX improvement in this regard.
 
-### The following user stories were tested for as an account holder:
+#### The following user stories were tested for as an account holder:
 
  - As an account holder I want to be able to leave reviews.
  Reviews can be left properly and all form inputs and buttons work properly computer, tablets and mobile devices when tested for.
@@ -157,7 +157,7 @@ The data model has been modified alongside updating the functions to create a co
  The proper functionality and relevant layout is present on computer, tablets and mobile when tested for. There is some side-scrolling present which I notice more on mobile than larger devices. The site works properly but there is room for UX improvement in this way.
 
 
-### The testing procedures where performed on the following devices and operating systems:
+#### The testing procedures where performed on the following devices and operating systems:
 
 - Manually tested for user stories on Android on a Motorola g20.  
 - Manually tested for user stories on Linux Mint on a Dell XPS 15 Laptop.
