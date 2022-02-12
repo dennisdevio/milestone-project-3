@@ -47,15 +47,31 @@ Finally the profile page shows the reviews the user has left.
 The wireframes were created using - [InVision](https://www.invisionapp.com/). 
 
 You can view the wireframes [here](https://dennischmielewski323696.invisionapp.com/freehand/Classic-Novels-Review-EoIn0vC2r).
+
 NOTE: The link to view the wireframes is not supported on the Firefox desktop browser but it works fine on mobile. It works fine on Chrome and Opera as well.
 
 ### Structure
 The structure of the website is laid out in such a way that the reviews have the main focus. Only a navbar at the top for navigation through the website, a hero image along with welcome text and a footer is present otherwise.
 The home page displays all reviews a stated above and if you create an account you get access to leaving reviews as well as editing and/or deleting reviews you have left. A non-member can only view the list of reviews without being able to interact with them. 
 
+As for structuring the database there are three data collections or tables created. One for users, one for reviews and one for books. From the start I set out to use descriptions for the books on the website but as I progressed in the development process I had do lessen the scope along the way. This led to the descriptions being in the database but they were left unused wich led to incongruency in the data model.
+I decided to scratch the descriptions and only used 'title' and 'author' fields in the book table. They are fetched and displayed in the reviews whenever a user creates a review, alongside the username and the user inputs 'review title' & 'review description̈́'.
+Whenever a user creates a review it is posted to the database with the user forms inputs of username (or 'added by'), review title, review decsription and 'book id' which contains both the authors name and the book title.
+A new user entry is posted to the 'users' table in the database with the fields 'username' and 'password' whenever a user decides to create an account. The username is stored securely within the database using SHA ecryption.
+
 ### Design
 To create an appealing feel to the website, I chose a mellow theme with green and white colors with not much extra going on around the reviews themselves to keep the main focus on them rather anything else. The green theme with the brown in the hero image I think creates a cozy feeling which makes me want to read. This is what I myself would want in such a website. For this reason I also chose to just have the name 'Classic Novels Review' as the logo.
 To make the website responsive I decided to go with Boostrap5 since it is an easy framework to work with that I have prior experience with. As a detail I added smooth scrolling behavior to the website to make the user experience more pleasant and seamless.
+
+During the development process I enhanced the design for better UX by 
+
+- Simplifying the text on the button in the edit review form from 'Edit Review!' to 'Edit'.
+- Similarly, removing the exclamation mark from the login and signup button as well.
+- Updating the edit buttons color to blue, the cancel/delete buttons color to red, and the add/logn/signup buttons to green.
+- Removing the 'Done button from the added reviews as it turned out to be redundant.
+- Improving the navbar styling hover effect from having a black underscore to simply the same slight gray as is used in the footer icons, for consistency.
+
+There is potential for further styling, especially in regards to the Bootstrap accordion. However given the time crunch I decided not to go with it at this time as the accordion is functional and serves its purpose with displaying the reviews.
 
 ## Features
 - Responsive Design across all device sizes, including a hamburger menu button on smaller screens.
@@ -64,14 +80,15 @@ To make the website responsive I decided to go with Boostrap5 since it is an eas
 - Functionality to add, edit and delete reviews within the account.
 
 #### Features Left to Implement
-The following is a full list of features that will be implemented on a future release:
+Some features were not able to be implemented on this current release.
+The following is a list of features that will be implemented on a future release:
 
 - Emails sent to user for for resetting passwords.
 - Function to delete an account.
-- Adding images to all book that are available for.
-- Showing one book and it's reviews detail.
+- Adding images to all books that are available for review.
+- Adding descriptions of for all books available for review.
+- Showing a single book and it's reviews detail.
 - Ability to add additional books for reviewing.
-
 
 ## Technologies
 The technologies used to build this website are the following
@@ -107,9 +124,38 @@ The technologies used to build this website are the following
 - [MongoDB](https://www.mongodb.com/) for handling and storing user data when interacting with their account. Three data collections were created in total - one for books, one for reviews and one for users.
 
 ## Testing
-Due to many difficulties along the way the site is not working properly as a whole.
-The connection with the database works fine with both adding and deleting tasks.
-The frontend is not working well at the moment. There is a problem with registration and the functionality that is supposed to be available only for registered users is available to non-registered users.
+At first the site did not work properly. The CRUD operations for faulty, the login fucntionality was not working properly and the data model was incongruent.
+Now the CRUD functionality is working as excpected. The login functionality is also working properly.
+The data model has been modified alongside updating the functions to create a congruent data model where both operations to get data from the database posting data to the database makes sense. All user inputs are posted to the database correctly and all book data is retrieved from the database correctly.
+
+The following user stories were tested for as a first time user:
+
+As a first time user I want to be able to easily understand what services you provide.
+ - By visiting the homepage the welcome text, hero image and posted reviews make it clear what the service is about. The information is presented clearly on computers, tablets and mobile.
+
+As a first time user I want to be able to easily be able to read reviews others have left.
+ - All reviews are clearly visible and dislayed correctly on mobile, tablets and computer when tested for. The visibilty could be improved by making the width a bit less on mobile as well as implementing some margins between reviews.
+
+As a first time user I want to be able to easily understand what the membership is about.
+ - The home page welcome text and all reviews clearly visible on mobile, tablets and computer when tested for.  
+
+As a first time user I want to know the site easily accessible on computer and mobile devices, especially if I'm going to sign up.
+ - The website is displayed correctly on mobile, tablets and computer when tested for. There is some side-scrolling present which I notice more on mobile than larger devices. The site works properly but there is room for UX improvement in this regard.
+
+The following user stories were tested for as an account holder:
+
+As an account holder I want to be able to leave reviews.
+ - Reviews can be left properly and all form inputs and buttons work properly computer, tablets and mobile devices when tested for.
+
+ As an account holder I want to be able to see the reviews I have left.
+ - The reviews I have left a clearly marked with the options to edit and delete on computer, tablets and on mobile when tested for.
+
+ As an account holder I want to be able to edit and/or delete reviews I have left.
+ - The functionality to edit and delete reviews is present and works properly on computer, tablets and on mobile when tested for.
+
+As an account holder I want to know your website is reliable on all devices I might use.
+ - The proper functionality and relevant layout is present on computer, tablets and mobile when tested for. There is some side-scrolling present which I notice more on mobile than larger devices. The site works properly but there is room for UX improvement in this way.
+
 
 The testing procedures where performed on the following devices and operating systems:
 
@@ -121,7 +167,6 @@ The testing procedures where performed on the following devices and operating sy
 - Tested on Iphone 11, 12 and 13 using Firefox Developer Tools.
 - Test on Ipad and Kindle Fire HDX Tablets using Firefox Developer Tools.
 
-
 Results from Lighthouse performance test
 ![screenshot_lighthouse_report_viewer](static/images/screenshot_lighthouse_report_viewer.png)
 
@@ -130,26 +175,28 @@ The Lighthouse report first came back with 75-85% on performance and accessibili
 Results from W3C Markup Validator test
 ![w3c_html_validator_results](static/images/w3c_html_validator_results.png)
 
- My first validator report came back with quite a few errors and warnings the first time. These erros pertained to the 'add' and 'edit' review buttons in the review forms, a couple of semantic tags that were out of place and the Bootstrap accordions which accidentally contained a couple of example 'id' attributes from the Official Docs. 
- After fixig the structure of the 'add' and 'edit' review buttons, removing the missplaced semantic tags and  example 'id' attributes in the Bootstrap accordions The Markup Validator came back with no errors the second time around.
+ My first validator report came back with quite a few errors and warnings the first time. These erros pertained to the 'add' and 'edit' review buttons in the review forms, a couple of semantic tags that were out of place and the Bootstrap accordions which wrongly contained a couple of 'id' attributes.
+ After fixing the structure of the 'add' and 'edit' review buttons, removing the missplaced semantic tags and 'id' attributes in the Bootstrap accordions The Markup Validator came back with no errors the second time.
 
 Results from W3C CSS Validator test
 ![w3c_css_validator_results](static/images/w3c_css_validator_results.png)
 
 The CSS Validator came back with no issues at all.
 
-
 #### Bugs Fixed
 - Reversed the structure to make the reviews the main function, rather than the books which I had done from the beginning.
-- Broken showcase link in README.md is now working properly. 
+- Broken showcase link in README.md is now working properly.
+- The 'Cancel'-buttons on the 'Add' and 'Edit' review forms wrongly posted new reviews. This was fixed by changing the type attributes from 'submit' to 'reset'. 
+- The book title and author name is displayed in added reviews in the 'reviews' template. This was done by getting the book object from the db rather than just the book name which I did at first.
+- The login and signup functionality is now working properly.
+- The complete CRUD functionality is now working properly with the ability for all users to read reviews, and the ability for registered users to add new reviews and edit and/or delete existing reviews.
+- Unexpected Bootstrap5 accordion behavior was fixed by leaving out the accordion header and just keeping the accordion body.
+- The review data and the book title was not pre-loading into the form when editing a review. This was fixed by updating the 'edit review'-function and 'edit review'-template.
 
 #### Bugs Left
-- Buttons not showing when logged in.
-- Book title and review title not showing in reviews.
-- Bootstrap5 accordion not showing properly when logged in.
-- Review info not loading into form when editing a review.
-- Delete functionality available when logged out.
-- Registration functionality does not work.
+- Book title and author name is not showing in the 'profile' template along with review title, description and the username, while it is showing in the 'reviews' template.S
+- All reviews are displaying in the profile page rather than only user specific reviews.
+- The site is scrolling a bit sideways both on desktop and on mobile.
 
 ## Deployment
 The deployment of this project was accomplished using Gitpod and Git for version control. 
