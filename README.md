@@ -83,7 +83,7 @@ There is potential for further styling, especially in regards to the Bootstrap a
 Some features were not able to be implemented on this current release.
 The following is a list of features that will be implemented on a future release:
 
-- Emails sent to user for for resetting passwords.
+- Emails sent to user for resetting passwords.
 - Function to delete an account.
 - Adding images to all books that are available for review.
 - Adding descriptions of for all books available for review.
@@ -194,7 +194,7 @@ The CSS Validator came back with no issues at all.
 - The review data and the book title was not pre-loading into the form when editing a review. This was fixed by updating the 'edit review'-function and 'edit review'-template.
 
 #### Bugs Left
-- Book title and author name is not showing in the 'profile' template along with review title, description and the username, while it is showing in the 'reviews' template.S
+- Book title and author name is not showing in the 'profile' template along with review title, description and the username, while it is showing in the 'reviews' template.
 - All reviews are displaying in the profile page rather than only user specific reviews.
 - The site is scrolling a bit sideways both on desktop and on mobile.
 
