@@ -4,7 +4,7 @@ The purpose of this website is to create a platform for book lovers where they c
 
 ## Showcase
 You can view the Classic Novels Review website [here](https://classic-novels-review.herokuapp.com/).
-![showcase_classic_novels_review.png](https://github.com/tetrapak-dev/milestone-project-3/blob/master/static/images/showcase_classic_novels_review.png)
+![showcase_classic_novels_review.png](https://github.com/dennisdevio/milestone-project-3/blob/master/static/images/showcase_classic_novels_review.png)
 
 ## UX
 
@@ -168,18 +168,18 @@ The data model has been modified alongside updating the functions to create a co
 - Test on Ipad and Kindle Fire HDX Tablets using Firefox Developer Tools.
 
 Results from Lighthouse performance test
-![screenshot_lighthouse_report_viewer](https://github.com/tetrapak-dev/milestone-project-3/blob/master/static/images/screenshot_lighthouse_report_viewer.png)
+![screenshot_lighthouse_report_viewer](https://github.com/dennisdevio/milestone-project-3/blob/master/static/images/screenshot_lighthouse_report_viewer.png)
 
 The Lighthouse report first came back with 75-85% on performance and accessibility. I then compressed the images a few more times and resolved the html validator issues I had before. These two measures particularly improved the performance and accessibility of the site to yield high score. The relatively lower rating on the performance is due to a combination of Bootstrap, Fontawesome and the hero image. I compressed the hero image until I could not compress it any further, using Tiny PNG. After a certain point the image would not compress significantly more. Bootstrap and Fontawesome are necessary for this project so I left it as is. Given the green bar on every testing parameter I am confident with the result.
 
 Results from W3C Markup Validator test
-![w3c_html_validator_results](https://github.com/tetrapak-dev/milestone-project-3/blob/master/static/images/w3c_html_validator_results.png)
+![w3c_html_validator_results](https://github.com/dennisdevio/milestone-project-3/blob/master/static/images/w3c_html_validator_results.png)
 
  My first validator report came back with quite a few errors and warnings the first time. These erros pertained to the 'add' and 'edit' review buttons in the review forms, a couple of semantic tags that were out of place and the Bootstrap accordions which wrongly contained a couple of 'id' attributes.
  After fixing the structure of the 'add' and 'edit' review buttons, removing the missplaced semantic tags and 'id' attributes in the Bootstrap accordions The Markup Validator came back with no errors the second time.
 
 Results from W3C CSS Validator test
-![w3c_css_validator_results](https://github.com/tetrapak-dev/milestone-project-3/blob/master/static/images/w3c_css_validator_results.png)
+![w3c_css_validator_results](https://github.com/dennisdevio/milestone-project-3/blob/master/static/images/w3c_css_validator_results.png)
 
 The CSS Validator came back with no issues at all.
 
@@ -209,7 +209,7 @@ If you want to view this website locally on your computer:
 - Run the website on a local server from there.
 
 This project reposity is hosted on  
-- [GitHub](https://github.com/) - you can find it at [this link](https://github.com/tetrapak-dev/milestone-project-3)
+- [GitHub](https://github.com/) - you can find it at [this link](https://github.com/dennisdevio/milestone-project-3)
 
 ### Hosting Platform
 This website is hosted on [Heroku](https://www.heroku.com/home) and is deployed directly from the 'master' branch. The deployed website will update automatically when new changes are committed to the master branch. 
