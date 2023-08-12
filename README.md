@@ -3,7 +3,7 @@ This website called Classic Novels Review is a website for book enthusiasts that
 The purpose of this website is to create a platform for book lovers where they can both contribute to the wider community by leaving reviews and learn about potential books to read by reading reviews others have left.
 
 ## Showcase
-You can view the Classic Novels Review website [here](https://classic-novels-review.herokuapp.com/).
+You can view the Classic Novels Review website [here](https://classic-novels-review.onrender.com/).
 ![showcase_classic_novels_review.png](https://github.com/dennisdevio/milestone-project-3/blob/master/static/images/showcase_classic_novels_review.png)
 
 ## UX
@@ -212,17 +212,16 @@ This project reposity is hosted on
 - [GitHub](https://github.com/) - you can find it at [this link](https://github.com/dennisdevio/milestone-project-3)
 
 ### Hosting Platform
-This website is hosted on [Heroku](https://www.heroku.com/home) and is deployed directly from the 'master' branch. The deployed website will update automatically when new changes are committed to the master branch. 
+This website is hosted on [Render](https://www.render.com/) and is deployed directly from the 'master' branch. The deployed website will update automatically when new changes are committed to the master branch. 
 
 To host this website:
 - I created a requirements.txt file using the terminal command 'pip freeze > requirements.txt'.
-- Then created a Procfile with the terminal command 'echo web: python app.py > Procfile'.
-- I added, committed, and pushed the files to the projects Github repository.
-- After that I created a new app on the Heroku website by clicking the "New" button in the dashboard.
-- From within the new app I clicked on settings --> deploy --> deployment method and then selected Github to connec the app to my Github repository.
-- Lastly I added the necessary config vars for 'IP', 'dabase name', 'database URI', 'port', 'secret_key' and 'key' in order to make the app able to run.
+- I added, committed, and pushed the file to the projects Github repository.
+- After that I created a new web service for the project on Render by clicking the "New" button in the dashboard, I then chose this repository.
+- From within the new web service settings I added the project name, chose the server location closest to me, picked to 'master' branch to deploy from and chose Python 3 as the runtime.
+- Lastly I added the necessary config variables for 'IP', 'dabase name', 'database URI', 'port', 'secret_key' and 'key' in order to make the web service able to run.
 
-The website can be viewed [here](https://classic-novels-review.herokuapp.com/)
+The website can be viewed [here](https://classic-novels-review.onrender.com/)
 
 ## Credits
 The following book titles were used for this projects
